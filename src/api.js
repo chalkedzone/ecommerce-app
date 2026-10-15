@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_JOB_TRACKER_API || 'http://localhost:5173'
+  baseURL: import.meta.env.VITE_JOB_TRACKER_API || 'http://localhost:5173' || 'https://ecommerce-app-eta-orcin.vercel.app/'
 })
 
 api.interceptors.request.use((config) => {
